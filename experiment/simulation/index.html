@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<!-- Add CSS at the head of HTML file -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>n-Back Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<body>
+    <div class="v-collapsible-instruction-container v-instruction-container">
+        <div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To perform n-Back Task
+            Experiment</div>
+        <div class="v-content">
+            <ul style="list-style: disc;">
+                <li>You need to set the value of N for the N-Back Test</li>
+                <li>You need to click Yes if the nth letter before the current letter is the same.</li>
+                <li>You can keep track of the score as you progress.</li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h1>n-back test</h1>
+    <div id="game-container">
+        <div id="letter-container"></div>
+        <button id="yes-button" class="v-button">Yes</button>
+        <button id="no-button" class="v-button">No</button>
+    </div>
+    <div id="settings-container">
+        <label for="n-input">n:</label>
+        <input type="number" id="n-input" min="1" value="2">
+        <button id="start-button" class="v-button">Start</button>
+    </div>
+    <div id="score-container">
+        <p>Score: <span id="score">0</span></p>
+        <button id="reset-button" class="v-button">Reset</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
