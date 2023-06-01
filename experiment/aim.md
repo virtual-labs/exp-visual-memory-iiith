@@ -1,1 +1,2 @@
-### Aim of the experiment
+## Aim
+The aim of this experiment is to investigate working memory capacity using the N-Back task. The experiment aims to provide participants with a deeper understanding of working memory and its limitations, as well as the opportunity to experience and analyze their own working memory performance.
