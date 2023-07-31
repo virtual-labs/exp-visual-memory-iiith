@@ -17,6 +17,23 @@
         },
         "correctAnswer": "c",
         "difficulty": "medium"
+      },
+      {
+        "question": "What is working memory?",
+        "answers": {
+          "a": "The ability to recall information from long-term memory.",
+          "b": "The capacity to hold information temporarily and manipulate it.",
+          "c": "The ability to focus attention on a specific task.",
+          "d": "The process of transferring information from sensory memory to long-term memory."
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       }
     ]
   }
