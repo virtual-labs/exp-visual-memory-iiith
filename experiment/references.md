@@ -1,1 +1,3 @@
-### Link your references in here
+### References
+1) Meule, A. (2017). Reporting and Interpreting Working Memory Performance in n-back Tasks. In Frontiers in Psychology (Vol. 8). Frontiers Media SA. https://doi.org/10.3389/fpsyg.2017.00352
+2) Conway, A. R. A., & Kovacs, K. (2019). Working Memory and Intelligence. In The Cambridge Handbook of Intelligence (pp. 504–527). Cambridge University Press. https://doi.org/10.1017/9781108770422.022
