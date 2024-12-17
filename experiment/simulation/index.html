@@ -5,40 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>n-Back Task</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <!-- Instructions Box -->
     <div class="v-collapsible-instruction-container v-instruction-container">
-        <div id="instruction-title" class="v-collapsible is-size-5">Instructions<br>To perform n-Back Task
-            Experiment</div>
+        <div id="instruction-title" class="v-collapsible is-size-5">Instructions: How to Perform the n-Back Task</div>
         <div class="v-content">
-            <ul style="list-style: disc; text-align:left">
-                <li>You need to set the value of N for the N-Back Test</li>
-                <li>You need to click Yes if the nth letter before the current letter is the same.</li>
-                <li>You can keep track of the score as you progress.</li>
-                </li>
+            <ul style="list-style: disc; text-align:left;">
+                <li>Set the value of "n" for the N-Back Test. This determines how many steps back you need to compare letters.</li>
+                <li>Click "Start" to begin the test.</li>
+                <li>Once the letters start appearing, you need to identify if the current letter matches the letter shown "n" steps earlier.</li>
+                <li>Click "Yes" if the letters match, and "No" if they don't.</li>
+                <li>Your score will increase every time you answer correctly. Keep track of your score as you progress.</li>
             </ul>
         </div>
     </div>
-    <h1>n-back test</h1>
-    <div id="game-container">
-        <div id="letter-container"></div>
-        <button id="yes-button" class="v-button">Yes</button>
-        <button id="no-button" class="v-button">No</button>
-    </div>
+
+    <h1>n-back Test</h1>
+
+    <!-- Settings Container (Input field for 'n' value) -->
     <div id="settings-container">
-        <label for="n-input">n:</label>
-        <input type="number" id="n-input" min="1" value="2">
+        <label for="n-input">Set the value of n (e.g., 2, 3, 4):</label><br>
+        <input type="number" id="n-input" min="1" value="2"><br>
         <button id="start-button" class="v-button">Start</button>
     </div>
+
+    <!-- Game Container (Letter Display and Buttons) -->
+    <div id="game-container">
+        <div id="letter-container">The letter appears here</div>
+        <div id="button-container">
+            <button id="yes-button" class="v-button">Yes</button>
+            <button id="no-button" class="v-button">No</button>
+        </div>
+    </div>
+
+    <!-- Score Container -->
     <div id="score-container">
         <p>Score: <span id="score">0</span></p>
         <button id="reset-button" class="v-button">Reset</button>
     </div>
+
+    <!-- External Scripts -->
     <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
     <script src="./js/main.js"></script>
 </body>

@@ -18,9 +18,40 @@ h1 {
   margin-bottom: 20px;
 }
 
+#settings-container label{
+  font-size: 20px;
+}
+
 button {
   font-size: 24px;
-  margin: 10px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Click effect using :active */
+button:active {
+  transform: scale(0.85);  /* Slightly shrink the button */
+}
+
+/* Optional: Ripple effect */
+button:focus {
+  outline: none; /* Remove the outline when button is focused */
+}
+
+button:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input{
+  font-size: 24px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 #settings-container {
@@ -35,12 +66,16 @@ button {
   font-weight: bold;
 }
   
-/* for dropping instruction box  */
 
+/* For the instruction box */
 .instructions-box {
   max-height: 70px;
   overflow: hidden;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .instructions-box.expand {
@@ -48,8 +83,44 @@ button {
 }
 
 .v-instruction-container {
-  border:.2rem solid #97d23d;
+  border: 0.2rem solid #97d23d;
   justify-content: flex-start;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.v-instruction-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1rem;
+}
+
+.v-instruction-container ul li {
+  padding: 5px 0;
+  color: #333;
+}
+
+.v-button{
+  margin: 10px;
+}
+
+.v-collapsible:after {
+  content: '\2193'; /* Downward arrow by default */
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: red; 
+  transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+.v-collapsible-active:after {
+  transform: rotate(180deg); /* Rotate 180 degrees */
+}
+
+
+body{
+  margin-bottom: 30px;
 }

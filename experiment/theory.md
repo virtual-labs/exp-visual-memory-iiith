@@ -1,7 +1,50 @@
-## Theory
-Working memory is a cognitive system that allows us to temporarily hold and manipulate information in our minds while performing complex tasks. It is crucial for a wide range of cognitive processes, including problem-solving, decision-making, and language comprehension. The N-Back task is a commonly used experimental paradigm to assess and measure working memory capacity.<br>
-Working memory consists of several components. The central executive acts as the control center, directing attention and coordinating information processing. It is responsible for allocating cognitive resources to different tasks and strategies. Two subsidiary systems are involved in working memory: the phonological loop and the visuospatial sketchpad. The phonological loop deals with auditory information, such as spoken language, while the visuospatial sketchpad handles visual and spatial information.<br>
-The N-Back task specifically targets the central executive and its ability to update and maintain information. In this task, participants are presented with a series of stimuli, such as numbers, letters, or shapes, one at a time. Their task is to indicate when the current stimulus matches the one that occurred N steps earlier in the sequence.<br>
-For example, in a 2-Back task, participants must respond whenever the current stimulus matches the one presented two stimuli ago. This requires actively maintaining the stimuli in working memory and constantly updating the representation as new stimuli are presented. The difficulty of the task increases as the N value gets larger, as it requires participants to keep track of a longer sequence of stimuli.<br>
-The N-Back task serves as a measure of working memory capacity and performance. By examining participants' accuracy and reaction time in identifying matches, researchers can gain insights into the limits and capabilities of working memory. Individuals with higher working memory capacity are generally more accurate and faster in their responses, as they can effectively maintain and manipulate a larger amount of information in their working memory.<br>
-The N-Back test is used to assess and train working memory. Working memory is important for many cognitive functions, such as reasoning, problem-solving, and learning. Some studies have suggested that training with the N-Back test can improve fluid intelligence, which is the ability to reason and solve novel problems.
+# Theory
+
+Working memory is a cognitive system that enables us to temporarily hold, process, and manipulate information while performing complex tasks. It acts as a mental workspace, supporting essential functions like problem-solving, decision-making, reasoning, and language comprehension. Working memory has a limited capacity. The famous theory by Miller (1956) suggests that the typical capacity of working memory is 7 items, plus or minus 2. This means that most people can hold between 5 and 9 pieces of information in working memory at a given time.
+
+
+
+Working memory is made up of three key components:
+
+- **Central Executive**:  
+  This is the control center of working memory. It directs attention, manages the flow of information, and coordinates cognitive activities. The central executive also allocates mental resources to focus on tasks and strategies, making it crucial for multitasking and decision-making.
+
+- **Phonological Loop**:  
+  The phonological loop deals with auditory and verbal information, such as spoken words or numbers. It allows us to rehearse and maintain information through mental repetition, like remembering a phone number by repeating it to ourselves.
+
+- **Visuospatial Sketchpad**:  
+  This component processes visual and spatial information, such as mentally visualizing an object or remembering the layout of a room. It helps us track positions, recognize shapes, and mentally "see" information.
+
+---
+
+## The N-Back Task
+
+The **N-Back task** is a widely used method to assess working memory capacity, specifically targeting the central executive.
+
+In this task, participants are shown a sequence of stimuli—like letters, numbers, or shapes—one at a time. The goal is to identify when the current stimulus matches the one presented N steps earlier.
+
+For example, in a 2-Back task, participants respond when the current stimulus matches the one presented two positions earlier.
+
+- **Example Sequence**: A → B → A → C → A  
+- **Task**: Identify that the current "A" matches the "A" shown two steps back.
+
+As the value of **N** increases (e.g., 3-Back, 4-Back), the task becomes more challenging. Participants must hold and update a longer sequence of items in working memory, which places greater demands on the central executive.
+
+---
+
+## Purpose and Importance
+
+The N-Back task serves two major purposes:
+
+- **Measuring Working Memory**:  
+  It evaluates accuracy (how well participants identify matches) and reaction time (how quickly they respond). These metrics provide insights into the limits and capabilities of working memory.
+
+- **Training Working Memory**:  
+  Regular practice with the N-Back task can improve working memory capacity and enhance fluid intelligence, which is the ability to solve new, unfamiliar problems.  
+  Studies suggest that training with this task helps the brain become better at updating and managing information efficiently.
+
+---
+
+## Summary
+
+The N-Back task is a powerful tool for understanding the strengths and limitations of working memory. It challenges participants to actively hold, process, and update information, providing valuable insights into cognitive performance and training.
