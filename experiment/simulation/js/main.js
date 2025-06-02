@@ -1,11 +1,14 @@
-const letterSequence = []; 
-let currentIndex = 0; 
-let score = 0; 
-let n = 2; 
+const letterSequence = [];
+let currentIndex = 0;
+let score = 0;
+let n = 2;
+let totalTrials = 15;
 
 const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 
-const letterContainer = document.getElementById('letter-container');
+const canvas = document.getElementById('letter-canvas');
+const ctx = canvas.getContext('2d');
+
 const yesButton = document.getElementById('yes-button');
 const noButton = document.getElementById('no-button');
 const nInput = document.getElementById('n-input');
@@ -19,6 +22,7 @@ startButton.addEventListener('click', handleStartClick);
 resetButton.addEventListener('click', handleResetClick);
 
 function handleYesClick() {
+    disableButtons(); // Disable until next letter
     if (checkAnswer('yes')) {
         score++;
         scoreSpan.innerText = score;
@@ -26,19 +30,22 @@ function handleYesClick() {
 }
 
 function handleNoClick() {
+    disableButtons(); // Disable until next letter
     if (checkAnswer('no')) {
         score++;
         scoreSpan.innerText = score;
     }
 }
 
+
 function handleStartClick() {
     letterSequence.length = 0;
     currentIndex = 0;
     score = 0;
     scoreSpan.innerText = score;
-    n = parseInt(nInput.value);
+    n = parseInt(nInput.value) || 2;
     generateLetterSequence();
+    enableButtons();
     showNextLetter();
 }
 
@@ -48,36 +55,71 @@ function handleResetClick() {
     score = 0;
     scoreSpan.innerText = score;
     nInput.value = n;
-    letterContainer.innerText = '';
+    clearCanvas();
+    enableButtons();
 }
 
 function checkAnswer(answer) {
-    if (currentIndex < n) {
-        return false;
-    }
+    if (currentIndex <= n) return false;
 
-    const correctIndex = currentIndex - n;
+    const correctIndex = currentIndex - 1 - n;
+    const currentLetter = letterSequence[currentIndex - 1];
+    const nBackLetter = letterSequence[correctIndex];
 
     if (answer === 'yes') {
-        return letterSequence[currentIndex] === letterSequence[correctIndex];
+        return currentLetter === nBackLetter;
     } else if (answer === 'no') {
-        return letterSequence[currentIndex] !== letterSequence[correctIndex];
+        return currentLetter !== nBackLetter;
     }
 }
 
 function generateLetterSequence() {
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < totalTrials; i++) {
         letterSequence.push(letters[Math.floor(Math.random() * letters.length)]);
     }
 }
 
 function showNextLetter() {
+    disableButtons(); // Prevent clicks before letter is drawn
+
     if (currentIndex < letterSequence.length) {
-        letterContainer.innerText = letterSequence[currentIndex];
+        const letter = letterSequence[currentIndex];
+        drawLetter(letter);
         currentIndex++;
-        setTimeout(showNextLetter, 2000);
+
+        // Enable buttons only during this 2-second window
+        setTimeout(() => {
+            enableButtons();
+            setTimeout(() => {
+                showNextLetter(); // Wait again before next letter
+            }, 2000); // Show for 2 seconds before moving to next
+        }, 200); // Slight delay before enabling buttons (adjustable)
     } else {
-        letterContainer.innerText = "Thank you";
+        drawLetter("Thank you");
+        disableButtons();
     }
 }
 
+
+function drawLetter(letter) {
+    clearCanvas();
+    ctx.font = "60px Arial";
+    ctx.fillStyle = "#333";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(letter, canvas.width / 2, canvas.height / 2);
+}
+
+function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function disableButtons() {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+}
+
+function enableButtons() {
+    yesButton.disabled = false;
+    noButton.disabled = false;
+}

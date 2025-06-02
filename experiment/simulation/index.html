@@ -27,26 +27,23 @@
 
     <h1>n-back Test</h1>
 
-    <!-- Settings Container (Input field for 'n' value) -->
     <div id="settings-container">
         <label for="n-input">Set the value of n (e.g., 2, 3, 4):</label><br>
         <input type="number" id="n-input" min="1" value="2"><br>
-        <button id="start-button" class="v-button">Start</button>
+        <div id="controls-row">
+            <button id="start-button" class="v-button">Start</button>
+            <button id="reset-button" class="v-button">Reset</button>
+        </div>
+        <p id="score-display">Score: <span id="score">0</span></p>
     </div>
 
     <!-- Game Container (Letter Display and Buttons) -->
     <div id="game-container">
-        <div id="letter-container">The letter appears here</div>
+        <canvas id="letter-canvas" width="300" height="150"></canvas>
         <div id="button-container">
             <button id="yes-button" class="v-button">Yes</button>
             <button id="no-button" class="v-button">No</button>
         </div>
-    </div>
-
-    <!-- Score Container -->
-    <div id="score-container">
-        <p>Score: <span id="score">0</span></p>
-        <button id="reset-button" class="v-button">Reset</button>
     </div>
 
     <!-- External Scripts -->
