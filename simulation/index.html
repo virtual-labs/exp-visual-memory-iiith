@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n-Back Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Instructions Box -->
+    <div class="v-collapsible-instruction-container v-instruction-container">
+        <div id="instruction-title" class="v-collapsible is-size-5">Instructions: How to Perform the n-Back Task</div>
+        <div class="v-content">
+            <ul style="list-style: disc; text-align:left;">
+                <li>Set the value of "n" for the N-Back Test. This determines how many steps back you need to compare letters.</li>
+                <li>Click "Start" to begin the test.</li>
+                <li>Once the letters start appearing, you need to identify if the current letter matches the letter shown "n" steps earlier.</li>
+                <li>Click "Yes" if the letters match, and "No" if they don't.</li>
+                <li>Your score will increase every time you answer correctly. Keep track of your score as you progress.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>n-back Test</h1>
+
+    <div id="settings-container">
+        <label for="n-input">Set the value of n (e.g., 2, 3, 4):</label><br>
+        <input type="number" id="n-input" min="1" value="2"><br>
+        <div id="controls-row">
+            <button id="start-button" class="v-button">Start</button>
+            <button id="reset-button" class="v-button">Reset</button>
+        </div>
+        <p id="score-display">Score: <span id="score">0</span></p>
+    </div>
+
+    <!-- Game Container (Letter Display and Buttons) -->
+    <div id="game-container">
+        <canvas id="letter-canvas" width="300" height="150"></canvas>
+        <div id="button-container">
+            <button id="yes-button" class="v-button">Yes</button>
+            <button id="no-button" class="v-button">No</button>
+        </div>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./js/main.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+
+</html>

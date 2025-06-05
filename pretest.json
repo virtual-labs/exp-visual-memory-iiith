@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is working memory?",
+      "answers": {
+        "a": "The ability to recall information from long-term memory.",
+        "b": "The capacity to hold information temporarily and manipulate it.",
+        "c": "The ability to focus attention on a specific task.",
+        "d": "The process of transferring information from sensory memory to long-term memory."
+      },
+      "explanations": {
+        "a": "This is incorrect. Working memory is not about recalling long-term memory; it refers to the temporary holding and manipulation of information.",
+        "b": "Correct! Working memory refers to the ability to temporarily hold and manipulate information necessary for tasks like problem-solving and decision-making.",
+        "c": "This is incorrect. While focusing attention is an important aspect of working memory, working memory itself specifically involves holding and manipulating information, not just focusing attention.",
+        "d": "This is incorrect. Working memory is distinct from the process of transferring information from sensory memory to long-term memory."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the capacity of working memory?",
+      "answers": {
+        "a": "Unlimited",
+        "b": "5 items",
+        "c": "7 plus or minus 2 items",
+        "d": "10 items"
+      },
+      "explanations": {
+        "a": "This is incorrect. Working memory has a limited capacity, not unlimited. The typical capacity is estimated to be around 7 items, plus or minus 2.",
+        "b": "This is incorrect. While working memory may sometimes hold 5 items in certain cases, research suggests a more typical capacity of around 7 items.",
+        "c": "Correct! The capacity of working memory is typically 7 items, plus or minus 2, according to the famous theory by Miller (1956).",
+        "d": "This is incorrect. While 10 items may be manageable in some situations, the typical capacity of working memory is not as large as 10 items."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which component of working memory processes visual and spatial information?",
+      "answers": {
+        "a": "Central Executive",
+        "b": "Phonological Loop",
+        "c": "Visuospatial Sketchpad",
+        "d": "Episodic Buffer"
+      },
+      "explanations": {
+        "a": "The central executive is responsible for coordinating cognitive processes and managing attention, but it does not specifically handle visual and spatial information.",
+        "b": "The phonological loop is responsible for auditory and verbal information, not visual or spatial information.",
+        "c": "Correct! The visuospatial sketchpad handles visual and spatial information, such as remembering the layout of objects or visualizing patterns.",
+        "d": "The episodic buffer integrates sensory information but does not specifically process visual or spatial information."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What does the N-Back Task assess?",
+      "answers": {
+        "a": "Short-term memory capacity",
+        "b": "Long-term memory retrieval",
+        "c": "Visual perception abilities",
+        "d": "Working memory and cognitive control"
+      },
+      "explanations": {
+        "a": "The N-Back task does not assess short-term memory capacity alone, but rather working memory, which includes both storage and manipulation of information.",
+        "b": "The N-Back task is not designed to assess long-term memory retrieval. It specifically tests working memory, which deals with temporary information processing.",
+        "c": "While the task may involve visual stimuli, its primary purpose is not to measure visual perception, but working memory and cognitive control.",
+        "d": "Correct! The N-Back task primarily assesses working memory and cognitive control, specifically how well you can maintain and update information in real-time."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How does the N-Back Task measure cognitive control?",
+      "answers": {
+        "a": "By assessing the speed of processing information.",
+        "b": "By evaluating how well you can inhibit irrelevant information.",
+        "c": "By tracking how accurately you maintain and update information in memory.",
+        "d": "By measuring the number of errors made during the task."
+      },
+      "explanations": {
+        "a": "While the speed of processing is important, cognitive control in the N-Back task is more related to how well you can actively update and manipulate information.",
+        "b": "Inhibiting irrelevant information is a part of cognitive control, but the N-Back task primarily measures how well you can update and maintain relevant information in memory.",
+        "c": "Correct! The N-Back task measures cognitive control by testing how accurately you can maintain and update information in your working memory in response to new stimuli.",
+        "d": "Although errors are noted, the N-Back task primarily measures how well you manage and update your working memory, not just the number of errors."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why does the difficulty of the N-Back Task increase as 'N' increases?",
+      "answers": {
+        "a": "Because it becomes easier to recall information as 'N' increases.",
+        "b": "Because the task requires you to hold and update more information in your working memory.",
+        "c": "Because it involves more complex visual patterns.",
+        "d": "Because the stimuli presented become more random and difficult to predict."
+      },
+      "explanations": {
+        "a": "This is incorrect. As 'N' increases, the task becomes more difficult, not easier, because it requires you to remember more items at once.",
+        "b": "Correct! As 'N' increases, the task becomes more challenging because you need to hold and update a larger amount of information in your working memory.",
+        "c": "While the stimuli may be more complex, the primary factor in increasing difficulty is the amount of information you need to manage and remember.",
+        "d": "The difficulty does not increase because the stimuli become random, but because of the increasing number of items you have to keep in mind and update."
+      },
+      "correctAnswer": "b",
+      "difficulty": "medium"
+    }
+  ]
+}
