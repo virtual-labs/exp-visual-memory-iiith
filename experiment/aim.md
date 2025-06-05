@@ -1,1 +1,2 @@
-### Aim of the experiment
+## Aim
+The aim of this experiment is to explore the concept of working memory and its capacity using the **N-Back task**. This experiment allows participants to actively engage with their working memory by completing tasks that require real-time information retention and processing. The goal is to help participants understand how working memory functions, recognize its limitations, and analyze their own performance in relation to cognitive load and task difficulty.
